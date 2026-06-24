@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+</head>
+
+<body>
+    <div class="texts">
+    <h1><img src="img/icone-check-verde.svg" alt="Concluído">Lista de Tarefas</h1>
+    <p>Organize suas tarefas e seja mais produtivo todos os dias!</p>
+    </div>
+
+    <header>
+        <div class="input">
+            <input id='inputTarefa' type="text" placeholder="Digite sua tarefa">
+        </div>
+        <div class="botao">
+            <button onclick="addTarefa()" id="btn-add" class="add"><img id="imgAdd"
+                    src="img/sinal-de-adicao.png">Adicionar</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <main id="areaLista">
+
+        </main>
+        <div id="mensagem" class="final">
+            <img id="check" src="img/check.png">
+            <p id="p1" >Sua produtividade começa aqui</p>
+            <p id="p2">Adicione tarefas e acompanhe o seu progresso</p>
+        </div>
+    </div>
+
+
+    <script src="js/control.js"></script>
+</body>
+
+</html>
