@@ -1,69 +1,33 @@
 /* Responsividade para tablets */
-
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
 
     header,
     main {
-        width: 85%;
+        width: 90%;
     }
 
     h1 {
         font-size: 2.5rem;
     }
-
-    p {
-        font-size: 1.2rem;
-    }
-
-    .input {
-        width: 80%;
-    }
-
-    .botao {
-        width: 20%;
-    }
-
-    .delete {
-        width: 150px;
-    }
 }
 
 /* Responsividade para celulares */
-
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
     body {
-        overflow-x: hidden;
         overflow-y: auto;
-    }
-
-    h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    h1 img {
-        width: 45px;
-        height: 45px;
-    }
-
-    p {
-        font-size: 1rem;
-        padding: 0 10px;
     }
 
     header {
         width: 95%;
-        padding: 15px;
-        min-height: auto;
         flex-direction: column;
+        padding: 15px;
         gap: 15px;
     }
 
     .input {
         width: 100%;
-        margin-left: 0;
-        height: 60px;
+        margin: 0;
     }
 
     .botao {
@@ -74,73 +38,46 @@
     button.add {
         width: 100%;
         height: 55px;
-        font-size: 16px;
     }
 
     main {
         width: 95%;
     }
+}
+
+/* Responsividade para celulares pequenos */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h1 img {
+        width: 40px;
+        height: 40px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 
     .item,
     .itemClicado {
-        flex-wrap: wrap;
+        flex-direction: column;
         height: auto;
-        min-height: 90px;
-        padding: 10px;
+        padding: 15px;
+        gap: 10px;
     }
 
-    .itemicone {
-        flex: 15%;
-    }
-
-    .itemnome {
-        flex: 85%;
-        font-size: 16px;
-        word-break: break-word;
-    }
-
+    .itemicone,
+    .itemnome,
     .itembotao {
-        flex: 100%;
-        height: auto;
-        margin-top: 10px;
+        width: 100%;
+        flex: none;
+        text-align: center;
     }
 
     .delete {
         width: 100%;
-        height: 45px;
-        font-size: 15px;
-    }
-}
-
-/* Responsividade para celulares pequenos */
-
-@media screen and (max-width: 480px) {
-
-    .texts {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 1.6rem;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    h1 img {
-        width: 35px;
-        height: 35px;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .itemnome {
-        font-size: 14px;
-    }
-
-    #check {
-        width: 55px;
-        height: 55px;
     }
 }
