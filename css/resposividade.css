@@ -14,20 +14,24 @@
 /* Responsividade para celulares */
 @media (max-width: 768px) {
 
-    body {
-        overflow-y: auto;
-    }
-
     header {
         width: 95%;
         flex-direction: column;
         padding: 15px;
         gap: 15px;
+        align-items: stretch;
     }
 
     .input {
         width: 100%;
+        height: 60px;
         margin: 0;
+    }
+
+    .input input {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
     }
 
     .botao {
@@ -36,12 +40,8 @@
     }
 
     button.add {
-        width: 100%;
-        height: 55px;
-    }
-
-    main {
-        width: 95%;
+        width: 60px;
+        height: 55%;
     }
 }
 
@@ -79,5 +79,15 @@
 
     .delete {
         width: 100%;
+    }
+
+    .botao {
+        width: 100%;
+        margin: 0;
+    }
+
+    button.add {
+        width: 60px;
+        height: 55%;
     }
 }
